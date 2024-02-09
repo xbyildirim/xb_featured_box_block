@@ -4,10 +4,27 @@
     height: auto;
 }
 
+.xb-featured-box-block.style1 .container{
+    max-width: 75%;
+    margin: auto;
+}
+
+.xb-featured-box-block.style1 .container .cont-row{
+    position: relative;
+    width: 100%;
+}
+
+.xb-featured-box-block.style1 .container .cont-row .row-col{
+   width: 50%;
+   position: relative;
+   float: left;
+}
+
 .xb-featured-box-block.style1 .top-section{
     position: relative;
     width: 100%;
     height: auto;
+    float: left;
 }
 
 .xb-featured-box-block.style1 .top-section .leftText .headline{
@@ -22,6 +39,13 @@
     position: relative;
     width: 100%;
     height: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.xb-featured-box-block.style1 .thisItem{
+    width: 25%;
+    float: left;
 }
 
 .xb-featured-box-block.style1 .bottom-section .box-section{
@@ -40,13 +64,13 @@
     height: 100%;
 }
 
-.xb-featured-box-block.style1 .bottom-section .box-section .featured-box:not(:first-child){
+/* .xb-featured-box-block.style1 .bottom-section .box-section .featured-box:not(:first-child){
     position: relative;
     width: 24%;
     padding-left: 1%;
     border-left: 3px solid black;
     height: 100%;
-}
+} */
 
 .xb-featured-box-block.style1 .bottom-section .box-section .featured-box a{
     text-decoration: none;
@@ -54,9 +78,12 @@
 }
 
 .xb-featured-box-block.style1 .bottom-section .box-section .featured-box a .featured-box-headline{
-    width: 200px;
+    width: 100%;
     position: relative;
     display: inline-block;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size:  20px;
 }
 
 .xb-featured-box-block.style1 .bottom-section .box-section .featured-box a .featured-box-read-more{
@@ -110,6 +137,14 @@
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
+    /* .xb-featured-box-block.style1 .container{
+        max-width: 95%;
+    } */
+    .xb-featured-box-block.style1 .container .cont-row .row-col{
+        width: 100%;
+        position: relative;
+        float: left;
+     }
     .xb-featured-box-block.style1 .top-section .rightText{
         padding-top: unset;
     }
@@ -120,6 +155,10 @@
         border-left: unset !important;
         width: 100% !important;
         padding: unset;
+    }
+
+    .xb-featured-box-block.style1 .bottom-section .box-section .featured-box:not(:first-child){
+        padding-top: 30px;
     }
     .xb-featured-box-block.style1 .bottom-section .box-section .featured-box a .featured-box-headline{
         padding-top: 12px;
