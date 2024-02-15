@@ -135,6 +135,11 @@
     transform: translateY(-50%);
 }
 
+.xbTopBar.onlyMobile{
+    display: none !important;
+}
+
+
 /* Mobile */
 @media only screen and (max-width: 600px) {
     /* .xb-featured-box-block.style1 .container{
@@ -175,6 +180,58 @@
     .xb-featured-box-block.style1 .bottom-section .box-section .featured-box a .featured-box-read-more span{
         opacity: 1;
     }
+    .xbTopBar.onlyMobile{
+        display: block !important;
+    }
+    .xbTopBar{
+        position: relative;
+        width: 100%;
+        margin-bottom: 5px;
+        background-color: transparent;
+    }
+
+    .xbTopBar .xbTopBarMain{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        position: relative;
+        width: 85%;
+        margin: auto;
+    }
+    .xbTopBar .xbTopBarMain .leftBar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .xbTopBar .xbTopBarMain .leftBar a{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: 12px;
+    }
+    .xbTopBar .xbTopBarMain .leftBar svg{
+        width: 16px;
+        height: 14px;
+        position: relative;
+        justify-content: center;
+        flex: 1;
+        margin-right: 5px;
+    }
+
+    .xbTopBar .xbTopBarMain .rightBar {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        font-size: 13px;
+        right: 0;
+     }
+     .xbTopBar .xbTopBarMain .rightBar a{
+        text-decoration: none;
+        color: black;
+     }
 }
 
 
